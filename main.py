@@ -17,10 +17,10 @@ def random_file_from_directory(dir_name):
 
 def create_sentence():
     result = ''
-    result += random_line_from_file('assets/title.txt') + ' '
-    result += random_line_from_file('assets/location.txt') + ' '
-    result += random_line_from_file('assets/name.txt') + ' ' if random.random() > 0.5 else ''
-    result += random_line_from_file('assets/action.txt')
+    result += random_line_from_file('assets/generators/title.txt') + ' '
+    result += random_line_from_file('assets/generators/location.txt') + ' '
+    result += random_line_from_file('assets/generators/name.txt') + ' ' if random.random() > 0.5 else ''
+    result += random_line_from_file('assets/generators/action.txt')
     return result
 
 

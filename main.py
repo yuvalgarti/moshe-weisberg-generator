@@ -42,7 +42,7 @@ if __name__ == '__main__':
 
     tweepy_api = tweepy.API(auth, wait_on_rate_limit=True)
 
-    schedule.every(10).minutes.do(tweet_job, tweepy_api)
+    schedule.every(3).hours.do(tweet_job, tweepy_api)
     while True:
         try:
             schedule.run_pending()

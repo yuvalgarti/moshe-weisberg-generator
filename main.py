@@ -19,7 +19,7 @@ def create_sentence():
     result = ''
     result += random_line_from_file('assets/generators/title.txt') + ' '
     result += random_line_from_file('assets/generators/location.txt') + ' '
-    if random.random() > 0.5:
+    if random.random() > 0.75:
         result += random_line_from_file('assets/generators/name.txt') + ' '
         if random.random() > 0.5:
             result += 'שליט"א '
